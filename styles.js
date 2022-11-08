@@ -2,8 +2,9 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
+        paddingTop: 48,
         flex: 1,
-        backgroundColor: '#ffcc00',
+        backgroundColor: '#0bd3d3',
         alignItems: 'center',
         justifyContent: 'space-around',
       },
@@ -13,18 +14,28 @@ const styles = StyleSheet.create({
       },
       punchline: {
         textAlign: 'center',
-        color: '#c00',
+        color: '#f890e7',
         fontSize: 32,
       },
       bigButton: {
-        backgroundColor: 'blue',
+        backgroundColor: '#000000',
         padding: 24,
         borderRadius: 6
       },
       buttonText: {
-        color: 'white',
+        color: '#f890e7',
         fontSize: 30,
       },
+      hidden:{
+        backgroundColor: '#f890e7',
+        width: '100%',
+        padding: 16
+      },
+      show: { 
+        backgroundColor: 'transparent',
+        width: '100%',
+        padding: 16
+      } 
 
 })
 

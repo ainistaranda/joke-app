@@ -30,7 +30,7 @@ export default function App() {
   }, [])
   return (
     <View style={styles.container}>
-      {jokeList
+      {jokeList && jokeList.length
       ? <>
       <Joke joke={jokeList[currentJokeIndex].setup}/>
       <Punchline punchline={jokeList[currentJokeIndex].punchline} />
@@ -43,6 +43,3 @@ export default function App() {
   );
 }
 
-// const styles = StyleSheet.create({
-  
-// });
