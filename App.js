@@ -6,6 +6,7 @@ import styles from './styles';
 import Joke from './components/Joke';
 import Punchline from './components/Punchline';
 import Another from './components/Another';
+import PunchlineInstructions from './components/PunchlineInstructions';
 
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
       {jokeList && jokeList.length
       ? <>
       <Joke joke={jokeList[currentJokeIndex].setup}/>
+      <PunchlineInstructions/>
       <Punchline punchline={jokeList[currentJokeIndex].punchline} />
       </>
       :null

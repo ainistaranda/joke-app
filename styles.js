@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         borderRadius: 6
       },
       buttonText: {
-        color: '#f890e7',
+        color: 'white',
         fontSize: 30,
       },
       hidden:{
@@ -35,7 +35,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         width: '100%',
         padding: 16
-      } 
+      },
+      punchlineInstructions: {
+        fontSize: 30,
+        textAlign: 'center'
+      },
 
 })
 
