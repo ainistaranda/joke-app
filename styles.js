@@ -31,7 +31,11 @@ const styles = StyleSheet.create({
       hidden:{
         backgroundColor: '#000000',
         width: '100%',
-        padding: 16
+        padding: 16,
+        borderTopRightRadius: 30,
+        borderBottomRightRadius: 30,
+        borderBottomLeftRadius: 30,
+        borderTopLeftRadius: 30,
       },
       show: { 
         backgroundColor: 'transparent',
