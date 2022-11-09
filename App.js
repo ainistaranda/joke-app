@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { ImageBackground, View } from 'react-native';
 import styles from './styles';
 // import Joke, Punchline, and Another components
 import Joke from './components/Joke';
 import Punchline from './components/Punchline';
 import Another from './components/Another';
 import PunchlineInstructions from './components/PunchlineInstructions';
+import LottieView from 'lottie-react-native'
 
 
 export default function App() {
@@ -31,6 +32,9 @@ export default function App() {
   }, [])
   return (
     <View style={styles.container}>
+      <ImageBackground style={styles.background}>
+        <LottieView source = {require('./assets/background.json')} autoPlay loop></LottieView>
+      </ImageBackground>
       {jokeList && jokeList.length
       ? <>
       <Joke joke={jokeList[currentJokeIndex].setup}/>
@@ -44,4 +48,5 @@ export default function App() {
     </View>
   );
 }
+
 

@@ -3,6 +3,6 @@ import styles from '../styles'
 
 export default function PunchlineInstructions(){
     return (
-        <Text style={styles.punchlineInstructions}>Tap the pink line below to reveal punchline⤵</Text>
+        <Text style={styles.punchlineInstructions}>Tap the line below to reveal punchline⤵</Text>
     )
 }
