@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 100,
+        // paddingTop: 0,
         flex: 1,
         backgroundColor: 'bone white',
         alignItems: 'center',
@@ -51,7 +51,8 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         position: 'absolute',
-        resizeMode: 'stretch',
+        top: 0,
+        resizeMode: 'cover',
       },
 
 })

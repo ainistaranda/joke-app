@@ -32,9 +32,9 @@ export default function App() {
   }, [])
   return (
     <View style={styles.container}>
-      <ImageBackground style={styles.background}>
-        <LottieView source = {require('./assets/background.json')} autoPlay loop></LottieView>
-      </ImageBackground>
+        <LottieView source={require('./assets/background.json')} autoPlay loop style={styles.background}></LottieView>
+      {/* <ImageBackground source={require('./assets/background.json')} style={styles.background}>
+      </ImageBackground> */}
       {jokeList && jokeList.length
       ? <>
       <Joke joke={jokeList[currentJokeIndex].setup}/>
